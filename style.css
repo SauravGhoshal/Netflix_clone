@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgb(0,0,0,0.7),rgba(0,0,0,0.7)), url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+ 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #fb0303;
+    color: white;
+    padding: 7px 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 10 px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+      
+}
+.lngbtn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent 40%;border: 1px solid white;
+    padding: 7pa 10px;
+
+}
+.lngbtn img {
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 55px;
+    /* line-height:60px ; */
+    font: weight 6000px; 
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.header-content p{
+    font-size: 20px;
+}
+.email-signup{
+    background:  #121111 ;
+    
+    
+
+  
+    border-radius: 4px;
+    outline: solid .1px #303030;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    color:white;
+    background: transparent 90%;
+    flex: 1;
+    border: 0px;
+    outline: 0px;
+    margin-left: 20px;
+    font-size: 21px;
+}
+.email-signup button{
+    background-color: rgb(253, 5, 5);
+    margin-left: 50px;
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 15px 15px;
+
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size:50px ;
+
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.li1{ padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;}
+.faq{
+    padding: 10px,12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform .5s
+
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background:#303030;
+   
+    padding: 0 20px;
+    max-height: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: max-height 0.5s , padding .5s;
+
+}
+.accordion input[type="radio"]:checked + label +.content{
+    max-height:600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 20px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 20px;
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+
+}
+/* ----------------------------------------------------- */
+@media only screen and (max-width:600px) 
+{
+    
+
+    
+    .logo{width: 100px;}
+    nav button{ 
+        font-size: small;
+        padding: 4px
+    };
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+        margin: auto;
+
+    }
+    .header-content h1{
+        font-size: 30px;
+
+
+        
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+       margin: auto;
+       
+    }}
+   
